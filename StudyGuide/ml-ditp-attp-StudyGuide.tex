@@ -1,0 +1,166 @@
+\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lecture Specific Information to Fill Out
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\LectureTitle}{Study Guide}
+%\newcommand{\LectureDate}{\today}
+\newcommand{\LectureDate}{\today}
+\newcommand{\LectureClassName}{Advanced Topics in Theoretical Physics}
+\newcommand{\LatexerName}{Juan Rojo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Change "article" to "report" to get rid of page number on title page
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{Tabbing}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage,url}
+\usepackage{soul,color}
+\usepackage{graphicx,float,wrapfig,amsmath}
+\usepackage{afterpage,textcomp}
+\usepackage{abstract}
+\usepackage[version=3]{mhchem} % for chemical equations
+\usepackage{chemfig} % for drawing chemical compounds
+\usepackage{pgfplots} % for plotting equations
+
+\usepackage{tcolorbox}
+
+\usepackage{bbold}
+
+\usepackage[colorlinks, citecolor=blue,anchorcolor=blue,menucolor=blue, 
+linkcolor=blue,filecolor=blue,runcolor=blue,urlcolor=blue,frenchlinks=blue]{hyperref}
+
+\newcommand{\la}{\left\langle}
+\newcommand{\ra}{\right\rangle}
+\newcommand{\lc}{\left[}
+\newcommand{\rc}{\right]}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+
+\newcommand{\bref}[1]{(\ref{#1})}
+
+\newcommand{\eqn}[1]{(\ref{#1})}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ben}{\begin{displaymath}}
+\newcommand{\een}{\end{displaymath}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bean}{\begin{eqnarray*}}
+\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\nn}{\nonumber \\}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\def\gsim{\mathrel{\rlap{\lower4pt\hbox{\hskip1pt$\sim$}}
+    \raise1pt\hbox{$>$}}}         %greater than or approx. symbol
+\def\lsim{\mathrel{\rlap{\lower4pt\hbox{\hskip1pt$\sim$}}
+    \raise1pt\hbox{$<$}}}         %less than or approx. symbol
+
+\input{header}
+\usepackage{slashed}
+
+% In case you need to adjust margins:
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+% Setup the header and footer
+\pagestyle{fancy}
+\lhead{\LatexerName}
+\chead{\LectureClassName: \LectureTitle}
+\rhead{\LectureDate}
+\lfoot{\lastxmark}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some tools
+\newcommand{\enterTopicHeader}[1]{\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+                                    \nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak}
+\newcommand{\exitTopicHeader}[1]{\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+                                   \nobreak\extramarks{#1}{}\nobreak}
+
+\renewcommand{\contentsname}{{\normalsize Table of Contents}}
+\renewcommand{\abstractname}{\Large \LectureTitle}
+\renewcommand{\absnamepos}{flushleft}
+
+\numberwithin{equation}{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{spacing}{1.1}
+$\quad$\\
+  \vskip100pt
+\hrule
+\vskip20pt
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[scale=0.33]{logo.pdf}\\
+  \includegraphics[scale=0.23,angle=-90]{nikhef.pdf}
+\end{center}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{center}
+  {\bf \Large  Machine Learning: \\[0.2cm]a New Toolbox for Theoretical Physics}\\[0.4cm]
+   {\bf \large  D-ITP Advanced Topics in Theoretical Physics}\\[0.8cm]
+  \end{center}
+
+ 
+\begin{center}
+  {\Large \bf Study Guide}\\
+  current version: \today \\[0.3cm]
+
+{\large  Course coordinator: Dr Juan Rojo (\href{mailto:j.rojo@vu.nl}{j.rojo@vu.nl}})
+\end{center}
+
+
+
+\vskip30pt
+\hrule
+\vskip20pt
+
+\clearpage
+
+\section{General overview}
+
+Under the generic umbrella denomination of Machine Learning (or Artificial Intelligence) one finds a number of statistical algorithms with the common feature that they manage to solve a specific task by learning by example from large datasets, as opposed to following a set of predefined rules. In recent years, Machine Learning tools have demonstrated their impressive potential to tackle a range of challenging problems related to classification, optimization, discrimination, inter- and extrapolation, efficient parametrizations, and pattern generalization, among several others.
+
+In this course, we present an overview of the applications of Machine Learning to various areas of theoretical physics, from particle and astroparticle physics phenomenology to condensed matter and string theory to name a few. The course will be a mixture of theoretical foundations, discussion of practical applications, and hands-on tutorials.
+
+\section{Schedule}
+
+
+\section{Examination}
+
+
+
+\section{Hands-on tutorials}
+
+repo
+
+Python   Conda homebrew
+
+check that you can execute some of the test programs in the repo
+
+
+
+\section{Useful reading}
+
+
+\end{spacing}
+
+\end{document}
