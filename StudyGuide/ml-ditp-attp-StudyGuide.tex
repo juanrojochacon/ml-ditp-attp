@@ -137,29 +137,166 @@ $\quad$\\
 
 \section{General overview}
 
-Under the generic umbrella denomination of Machine Learning (or Artificial Intelligence) one finds a number of statistical algorithms with the common feature that they manage to solve a specific task by learning by example from large datasets, as opposed to following a set of predefined rules. In recent years, Machine Learning tools have demonstrated their impressive potential to tackle a range of challenging problems related to classification, optimization, discrimination, inter- and extrapolation, efficient parametrizations, and pattern generalization, among several others.
+Under the generic umbrella denomination of Machine Learning (or Artificial Intelligence) one finds a number of statistical algorithms with the common feature that they manage to solve a specific task by learning by example from large datasets, as opposed to following a set of predefined rules. In recent years, Machine Learning tools have demonstrated their impressive potential to tackle a range of challenging problems related to classification, optimization, discrimination, inter- and extrapolation, efficient parameterizations, and pattern generalization, among several others.
 
 In this course, we present an overview of the applications of Machine Learning to various areas of theoretical physics, from particle and astroparticle physics phenomenology to condensed matter and string theory to name a few. The course will be a mixture of theoretical foundations, discussion of practical applications, and hands-on tutorials.
 
 \section{Schedule}
 
+There will be four lectures, each taking place between 11am and 1pm
+at room H331 of Nikhef. In the corresponding afternoon the hands-on tutorial
+will take place, always in room H331. So the schedule of the course is:
+
+\begin{itemize}
+
+\item Monday 18th of November 2019: Lecture (11am to 1pm) and Tutorial (2pm to 5pm).
+
+\item Monday 25th of November 2019: Lecture (11am to 1pm) and Tutorial (2pm to 5pm).
+
+\item Monday 2nd of December 2019: Lecture (11am to 1pm) and Tutorial (2pm to 5pm).
+
+\item Monday 9th of December 2019: Lecture (11am to 1pm) and Tutorial (2pm to 5pm).
+
+\end{itemize}  
+
+The exam will take place on Monday 16th of December.
+%
+The requisites to obtain a pass in this module of the Advanced Topics in Theoretical Physics
+course are described below.
 
 \section{Examination}
 
+The examination of the course will be composed by two parts:
+
+\begin{itemize}
+
+\item A short report (around 4 pages long) about a specific application
+  of Machine Learning to a physics problem that you find interesting
+  or relevant for your research.
+  %
+  This report can be writtem individually or in groups of at most three students.
+  %
+  You should describe the physics problem that one is trying to use,
+  the details of the machine learning algorithm adopted, and how
+  this improves over more traditional approaches.
+
+  Enthusiastic students might want to include with their submission
+a piece of code that implements and executes this ML algorithm for some
+toy application that they find interesting, though this is not a formal
+requirement to achieve a pass in the course.
+
+This report should be submitted to the course coordinator by Sunday 15th of
+December at the latest.
+
+\item Monday 16th of December, start at 11am and continue until all of the presentations
+have been completed
+
+individual or groups
+
+Presentation (10 min)
+
+Physics content and the description of the ML algorithm used.
+Connection with the topics covered in this course
+
+\end{itemize}  
+
+Note that both handing in the reports and presenting them
+are requisites (necessary but not sufficient) to pass the course.
+
+
+\section{Course contents}
+
+Some of the contents that will be covered during the course are:
+
+\begin{itemize}
+
+\item Artificial neural networks
+
+\item Supervised versus unsupervised learning
+
+\item Under-learning and over-fitting  
+
+\item Machine learning application for parametrization 
+
+\item Machine learning applications for classification and discrimination
+
+\item Machine learning applications for inter- and extrapolation
+  
+\item Machine learning applications for complex optimisation and search problems
+
+\item Hyper-parameter optimisation
+
+\item Training strategies: from genetic algorithms to gradient descent methods
+
+\item Generative models and generative adversarial networks
+
+\item Deep learning  
+
+\item ....  
+  
+\end{itemize}
+  
+In addition, more topics can be added to the discussion if there is sufficient
+interest from the participating students.
 
 
 \section{Hands-on tutorials}
 
-repo
+This course will contain four hands-on tutorial sessions following each
+of the lectures.
+%
+The idea is for the participants to learn how to use, modify, and apply
+some of the machine learning algorithms used in the course.
+%
+These will be implemented in {\tt Python} programs.
+%
+While the emphasis of the course is not on programming itself but rather
+in the algorithms and their applications, fully benefiting from the tutorials
+requires some knowledge of {\tt Python}.
+%
+Participants should therefore bring their own laptop to the tutorial sessions.
 
-Python   Conda homebrew
+The code that will be used for the tutorials, together with all other course
+materials such as the lecture slides, can be obtained from a GitHub
+repository:
+\begin{center}
+  \url{https://github.com/juanrojochacon/ml-ditp-attp}
+\end{center}
+This repo will be updated during the course so student should remind to
+pull the latest version before the lectures.
 
-check that you can execute some of the test programs in the repo
+Many of the examples that we will use require specific {\tt Python} libraries
+such as {\tt SciPy}, {\tt NumPy}, and {\tt  MatplotLib}.
+%
+Participants in the course should make sure that their local {\tt Python}
+installation is up to date and that all relevant packages are installed.
+%
+This can be verified by executing some of the example programs that
+will be found in the {\tt Code} folder.
 
-
+There exist a large number of possible ways to install Python.
+%
+Perhaps a convenient one is via the {\tt Conda} package manager
+\begin{center}
+\url{https://docs.conda.io/projects/conda/en/latest/user-guide/install/}
+\end{center}
+which is available for Windows, macOS and Linus, but other package managers
+such as {\tt Homebrew} or {\tt Pip} can also be used.
+%
+Regardless of the choice, an important recommendation is to use a single
+package manager, since combining two or more usually leads to issues
+with the {\tt Python} installation.
 
 \section{Useful reading}
 
+Here we provide a list of potentially useful references about the topic
+of machine learning in physics in general, in some cases with emphasis
+in theoretical and high energy physics.
+%
+The interested student will find in these references sufficient material if
+she is interested in deepening some of the concepts that will be covered in the lectures.
+
+Lectures on ML in high-energy physics => slides
 
 \end{spacing}
 

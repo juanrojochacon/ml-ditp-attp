@@ -1,0 +1,13 @@
+###################################################
+###################################################
+1) Generate pseudo-data for the nuclear
+gluon PDF g(x,A,Q=10 GeV) (only central values)
+for a given range of x and A
+2) Students should then construct a theory
+model (2-input NN) and optimise the chi2 using TensorFlow
+3) Repeat the results for different random seeds,
+compare to the input data, and interpret the results
+4) Study the robustness of the results with
+respect to the choice of network architecture
+###################################################
+#####################################################
