@@ -5,7 +5,7 @@
 \newcommand{\LectureTitle}{Study Guide}
 %\newcommand{\LectureDate}{\today}
 \newcommand{\LectureDate}{\today}
-\newcommand{\LectureClassName}{Advanced Topics in Theoretical Physics}
+\newcommand{\LectureClassName}{Machine Learning for Theoretical Physics}
 \newcommand{\LatexerName}{Juan Rojo}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -121,10 +121,11 @@ $\quad$\\
 
  
 \begin{center}
-  {\Large \bf Study Guide}\\
+  {\Large \bf Study Guide}\\[0.3cm]
   current version: \today \\[0.3cm]
 
-{\large  Course coordinator: Dr Juan Rojo (\href{mailto:j.rojo@vu.nl}{j.rojo@vu.nl}})
+  {\large  Course coordinator: Dr Juan Rojo (\href{mailto:j.rojo@vu.nl}{j.rojo@vu.nl}})\\[0.3cm]
+  {\large \url{http://www.juanrojo.com}}
 \end{center}
 
 
@@ -135,7 +136,7 @@ $\quad$\\
 
 \clearpage
 
-\section{General overview}
+\section{Course description}
 
 Under the generic umbrella denomination of Machine Learning (or Artificial Intelligence) one finds a number of statistical algorithms with the common feature that they manage to solve a specific task by learning by example from large datasets, as opposed to following a set of predefined rules. In recent years, Machine Learning tools have demonstrated their impressive potential to tackle a range of challenging problems related to classification, optimization, discrimination, inter- and extrapolation, efficient parameterizations, and pattern generalization, among several others.
 
@@ -144,7 +145,9 @@ In this course, we present an overview of the applications of Machine Learning t
 \section{Schedule}
 
 There will be four lectures, each taking place between 11am and 1pm
-at room H331 of Nikhef. In the corresponding afternoon the hands-on tutorial
+at {\bf room H331 of Nikhef}.
+%
+In the corresponding afternoon the hands-on tutorial
 will take place, always in room H331. So the schedule of the course is:
 
 \begin{itemize}
@@ -163,6 +166,10 @@ The exam will take place on Monday 16th of December.
 %
 The requisites to obtain a pass in this module of the Advanced Topics in Theoretical Physics
 course are described below.
+%
+Note that only registered students that aim to receive credits
+upon completion of the three course modules need to  take
+part in the examination.
 
 \section{Examination}
 
@@ -170,49 +177,72 @@ The examination of the course will be composed by two parts:
 
 \begin{itemize}
 
-\item A short report (around 4 pages long) about a specific application
-  of Machine Learning to a physics problem that you find interesting
+\item A short report (4 pages long) about a specific application
+  of Machine Learning algorithms
+  to a physics problem that you find interesting
   or relevant for your research.
   %
-  This report can be writtem individually or in groups of at most three students.
+  This can be one of the examples discussed in the course
+  of an altogether new application.
+
+  
+  %
+  This report can be either written individually or in groups of at most three students.
   %
   You should describe the physics problem that one is trying to use,
   the details of the machine learning algorithm adopted, and how
-  this improves over more traditional approaches.
+  this approach improves over more traditional strategies.
 
   Enthusiastic students might want to include with their submission
 a piece of code that implements and executes this ML algorithm for some
-toy application that they find interesting, though this is not a formal
+toy application, though this is not a formal
 requirement to achieve a pass in the course.
 
-This report should be submitted to the course coordinator by Sunday 15th of
-December at the latest.
+This report should be submitted to the course coordinator by email {\bf by Friday 13th of
+December} at the latest.
 
-\item Monday 16th of December, start at 11am and continue until all of the presentations
-have been completed
-
-individual or groups
-
-Presentation (10 min)
-
-Physics content and the description of the ML algorithm used.
-Connection with the topics covered in this course
+\item On Monday 16th of December starting at 11am
+  each student/group should present their report to the course coordinator
+  and the rest of participants.
+  %
+  Students should aim for a short (10 min max) presentation followed
+  by a discussion.
+  %
+  Providing full background of the relevant physics is not necessary
+  (further references if needed can be added in the written report).
 
 \end{itemize}  
+  
+Note that both handing in the reports and presenting their content
+on the 16th of December
+are formal requisites (necessary but not sufficient) to pass the course.
+%
+If the quality of the report and the corresponding presentation is deemed
+sufficient (taking into account the topics covered during the course),
+the student/group will be granted a pass for this module.
 
-Note that both handing in the reports and presenting them
-are requisites (necessary but not sufficient) to pass the course.
+As mentioned above, {\bf only registered students that take
+  the course for credits} are required to participate
+in the examination.
 
 
 \section{Course contents}
 
-Some of the contents that will be covered during the course are:
+Some of the contents that will be covered during the course include:
 
 \begin{itemize}
 
 \item Artificial neural networks
 
 \item Supervised versus unsupervised learning
+
+\item Hyper-parameter optimisation
+
+\item Training strategies: from genetic algorithms to gradient descent methods
+
+\item Generative models and generative adversarial networks
+
+\item Deep learning  
 
 \item Under-learning and over-fitting  
 
@@ -224,45 +254,44 @@ Some of the contents that will be covered during the course are:
   
 \item Machine learning applications for complex optimisation and search problems
 
-\item Hyper-parameter optimisation
+\item Convolutional neural networks
 
-\item Training strategies: from genetic algorithms to gradient descent methods
-
-\item Generative models and generative adversarial networks
-
-\item Deep learning  
-
-\item ....  
+\item Variational autoencoders.
   
 \end{itemize}
   
-In addition, more topics can be added to the discussion if there is sufficient
+Further topics can be added to the above list if there is sufficient
 interest from the participating students.
-
 
 \section{Hands-on tutorials}
 
-This course will contain four hands-on tutorial sessions following each
+As mentioned above,
+this course will include four hands-on tutorial sessions following each
 of the lectures.
 %
-The idea is for the participants to learn how to use, modify, and apply
-some of the machine learning algorithms used in the course.
+The idea of these tutorial
+sessions is for the participants to learn how to use, modify, and apply
+some of the machine learning algorithms presented in the course.
 %
-These will be implemented in {\tt Python} programs.
+These will be implemented in {\tt Python} programs and/or notebooks.
 %
 While the emphasis of the course is not on programming itself but rather
 in the algorithms and their applications, fully benefiting from the tutorials
 requires some knowledge of {\tt Python}.
-%
-Participants should therefore bring their own laptop to the tutorial sessions.
 
+
+Participants should  {\bf bring their own laptops} to the tutorial sessions,
+and make sure that they have an up-to-date functional installation of {\tt Python}
+in their system.
+%
 The code that will be used for the tutorials, together with all other course
-materials such as the lecture slides, can be obtained from a GitHub
+materials such as the lecture slides, can be obtained from a public GitHub
 repository:
 \begin{center}
   \url{https://github.com/juanrojochacon/ml-ditp-attp}
 \end{center}
-This repo will be updated during the course so student should remind to
+This repository will be updated during the course and students should remind
+themselves to
 pull the latest version before the lectures.
 
 Many of the examples that we will use require specific {\tt Python} libraries
@@ -272,31 +301,83 @@ Participants in the course should make sure that their local {\tt Python}
 installation is up to date and that all relevant packages are installed.
 %
 This can be verified by executing some of the example programs that
-will be found in the {\tt Code} folder.
+will be found in the {\tt Code} folder in the repository.
 
 There exist a large number of possible ways to install Python.
 %
-Perhaps a convenient one is via the {\tt Conda} package manager
+A convenient one is via the {\tt Conda} package manager
 \begin{center}
 \url{https://docs.conda.io/projects/conda/en/latest/user-guide/install/}
 \end{center}
-which is available for Windows, macOS and Linus, but other package managers
+which is available for Windows, macOS and Linux, but other package managers
 such as {\tt Homebrew} or {\tt Pip} can also be used.
 %
 Regardless of the choice, an important recommendation is to use a single
 package manager, since combining two or more usually leads to issues
+and conflicts
 with the {\tt Python} installation.
 
 \section{Useful reading}
 
-Here we provide a list of potentially useful references about the topic
+Here we provide an incomplete list of potentially useful references about the topic
 of machine learning in physics in general, in some cases with emphasis
 in theoretical and high energy physics.
 %
 The interested student will find in these references sufficient material if
 she is interested in deepening some of the concepts that will be covered in the lectures.
 
-Lectures on ML in high-energy physics => slides
+\begin{thebibliography}{99}
+
+%\cite{Carleo:2019ptp}
+\bibitem{Carleo:2019ptp} 
+  G.~Carleo, I.~Cirac, K.~Cranmer, L.~Daudet, M.~Schuld, N.~Tishby, L.~Vogt-Maranto and L.~Zdeborová,
+  ``Machine learning and the physical sciences,''
+  arXiv:1903.10563 [physics.comp-ph].
+  %%CITATION = ARXIV:1903.10563;%%
+  %9 citations counted in INSPIRE as of 16 Oct 2019
+
+ %\cite{Mehta:2018dln}
+\bibitem{Mehta:2018dln} 
+  P.~Mehta, M.~Bukov, C.~H.~Wang, A.~G.~R.~Day, C.~Richardson, C.~K.~Fisher and D.~J.~Schwab,
+  ``A high-bias, low-variance introduction to Machine Learning for physicists,''
+  Phys.\ Rept.\  {\bf 810}, 1 (2019)
+  doi:10.1016/j.physrep.2019.03.001
+  [arXiv:1803.08823 [physics.comp-ph]].
+  %%CITATION = doi:10.1016/j.physrep.2019.03.001;%%
+  %14 citations counted in INSPIRE as of 16 Oct 2019  
+
+  %\cite{Abdughani:2019wuv}
+\bibitem{Abdughani:2019wuv} 
+  M.~Abdughani, J.~Ren, L.~Wu, J.~M.~Yang and J.~Zhao,
+  ``Supervised deep learning in high energy phenomenology: a mini review,''
+  Commun.\ Theor.\ Phys.\  {\bf 71}, no. 8, 955 (2019)
+  doi:10.1088/0253-6102/71/8/955
+  [arXiv:1905.06047 [hep-ph]].
+  %%CITATION = doi:10.1088/0253-6102/71/8/955;%%
+  %3 citations counted in INSPIRE as of 16 Oct 2019
+
+ 
+
+  %\cite{Paganini:2019wcy}
+\bibitem{Paganini:2019wcy} 
+  M.~Paganini,
+  ``Machine Learning Solutions for High Energy Physics: Applications to Electromagnetic Shower Generation, Flavor Tagging, and the Search for di-Higgs Production,''
+  arXiv:1903.05082 [hep-ex].
+  %%CITATION = ARXIV:1903.05082;%%
+
+\bibitem{glpouppe}
+  Giles Louppe, lectures on Advanced
+  Machine Learning: \url{https://github.com/glouppe/info8004-advanced-machine-learning}
+
+
+\bibitem{ml-cond}
+  Machine Learning in Condensed Matter Physics course.
+  Roger Melko, Lei Wang, Eun-Ah Kim, Zohar Ringel.
+  Course repository:
+\url{https://github.com/iamc/ML-CM-2019}
+  
+
+  \end{thebibliography}
 
 \end{spacing}
 
