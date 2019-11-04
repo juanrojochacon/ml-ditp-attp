@@ -39,7 +39,12 @@ from matplotlib import cm
 from matplotlib import animation
 from IPython.display import HTML
 from matplotlib.colors import LogNorm
-from itertools import zip_longest
+try:
+    # Python 3
+    from itertools import zip_longest
+except ImportError:
+    # Python 2
+    from itertools import izip_longest as zip_longest
 #############################################################################3
 
 np.random.seed() # shuffle random seed generator
