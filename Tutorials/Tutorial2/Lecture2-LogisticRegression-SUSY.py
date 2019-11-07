@@ -36,7 +36,7 @@ tf.set_random_seed(seed)
 # Download the SUSY.csv (about 2GB) from UCI ML archive and save it in the same directory as this jupyter notebook
 # See: https://archive.ics.uci.edu/ml/machine-learning-databases/00279/
 #filename="SUSY.csv"
-filename='/Users/juanrojo/physics19/ML/SUSYdataset/SUSY.csv' 
+filename = '/Users/rabah/Downloads/SUSY.csv'
 
 columns=["signal", "lepton 1 pT", "lepton 1 eta", "lepton 1 phi", "lepton 2 pT", "lepton 2 eta", 
          "lepton 2 phi", "missing energy magnitude", "missing energy phi", "MET_rel", 
