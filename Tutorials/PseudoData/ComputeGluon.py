@@ -25,9 +25,9 @@ if __name__ == '__main__':
     
     pdf_name = sys.argv[1]
 
-    xmin = -3
+    xmin = -6
     xmax = 0
-    nx = 201
+    nx = 1001
     Nrep = 100
     Q0=2
 
@@ -43,14 +43,14 @@ if __name__ == '__main__':
 
     gluon_std = np.std(gluon_reps, axis=0)
 
-    data = open("gluon_"+pdf_name+".dat", "w")
+    data = open("gluon_"+pdf_name+"_xmin1e"+str(xmin)+".dat", "w")
     data.write("# pdf: "+pdf_name+"\n")
     data.write("# Q0: "+str(Q0)+" GeV \n")
     data.write("# Nrep: "+str(Nrep)+"\n")
     data.write("# [xmin, xmax, nx]: [10^("+str(xmin)+"), 10^("+str(xmax)+"), "+str(nx)+"]\n")
     data.write("# \t x \t gluon(cv) \t gluon(sd) \n ")
 
-    float_f = '{:>10.6f}'
+    float_f = '{:>10.8f}'
 
     for ix in range(nx-1):
         line = []
